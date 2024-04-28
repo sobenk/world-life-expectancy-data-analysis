@@ -9,7 +9,6 @@ GROUP BY Country
 HAVING MIN(`Life expectancy`) <> 0
 AND MAX(`Life expectancy`) <> 0
 ORDER BY Country DESC;
-```
 
 --  Ensuite, nous avons calculé l'espérance de vie moyenne par année pour déduire une tendance générale.
 SELECT Year, ROUND(AVG(`Life expectancy`),2)
